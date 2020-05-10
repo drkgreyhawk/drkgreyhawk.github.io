@@ -1,0 +1,4 @@
+# No need to repo the .lock file
+Gemfile.lock
+# Jekyll local dev folder
+_site
