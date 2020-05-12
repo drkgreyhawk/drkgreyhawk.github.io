@@ -16,5 +16,5 @@ My name is Hyrum Mack. I am a web developer. When I'm not working I love to crea
 * JavaScript
 * HTML
 * CSS
-* [A little lua](https://github.com/drkgreyhawk/keystone-loot)
+* [a little lua](https://github.com/drkgreyhawk/keystone-loot)
 * [some Python](https://github.com/drkgreyhawk/gold-recorder)
