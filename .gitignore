@@ -2,3 +2,5 @@
 Gemfile.lock
 # Jekyll local dev folder
 _site
+
+.DS_Store
