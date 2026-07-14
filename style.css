@@ -219,7 +219,7 @@ body::before {
 .footer {
     text-align: center;
     margin-top: 3rem;
-    color: var(--grey-dark);
+    color: var(--grey-mid);
     font-size: 0.9rem;
     font-family: 'Courier New', monospace;
     animation: fadeIn 1s ease 0.5s both;
