@@ -4,43 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0c">
   <script data-goatcounter="https://drkgreyhawk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <title>404 | Hyrum Mack</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23121214'/%3E%3Cpath d='M9 11l5 5-5 5' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 22h7' stroke='%23fff' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="terminal-prompt">$ cd /404</div>
-      <h1 class="name">404</h1>
-      <p class="subtitle">Page <span class="code-accent">|</span> Not Found</p>
-    </header>
+  <main class="terminal">
+    <div class="terminal-bar" aria-hidden="true">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="terminal-title">hyrum@drkgreyhawk: ~</span>
+    </div>
 
-    <main>
-      <section class="card">
-        <h2 class="card-title">Error</h2>
-        <p class="about-text">
+    <div class="terminal-body">
+      <header class="block" style="--i: 0">
+        <p class="cmd">cd ./404</p>
+        <h1 class="name">404</h1>
+        <p class="subtitle">Page<span class="sep" aria-hidden="true">/</span>Not Found</p>
+      </header>
+
+      <section class="block" style="--i: 1">
+        <h2 class="cmd">cat error.log</h2>
+        <p class="output">
+          <span class="error">cd: no such file or directory</span><br>
           The page you're looking for doesn't exist, moved, or never was. Let's get you back on track.
         </p>
       </section>
 
-      <section class="card">
-        <h2 class="card-title">Navigate</h2>
-        <div class="projects-grid">
-          <div class="project-item">
-            <a href="/" class="project-link">
-              <span>Home</span>
+      <section class="block" style="--i: 2">
+        <h2 class="cmd">ls ~</h2>
+        <ul class="links">
+          <li>
+            <a href="/" class="link-row">
+              <span class="link-name">home</span>
+              <span class="link-meta">drkgreyhawk.com</span>
+              <span class="link-arrow" aria-hidden="true">→</span>
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
-    </main>
 
-    <footer class="footer">
-      <p>$ echo "404: page not found"</p>
-    </footer>
-  </div>
+      <p class="block prompt-idle" style="--i: 3" aria-hidden="true">~ $ <span class="cursor"></span></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>$ echo "404: page not found"</p>
+  </footer>
 </body>
 
 </html>
